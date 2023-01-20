@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: var(--black-dnc);
+}
+
+:root {
+    --black-dnc: #1e1e1e;
+    --white-text: #ffffff;
+    --blue-dnc: #0c70f2;
+    --borderRadius-global: 10px;
+    --font-Helvetica: "Helvetica";
+    --font-Raleway: "Raleway";
+}
+
+#logo {
+    margin: 3rem 0 0 3rem;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: var(--font-Helvetica);
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--white-text);
+    margin: 2rem 0 3rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #181818;
+    border-radius: var(--borderRadius-global);
+    width: 522px;
+    height: 52px;
+    text-indent: 1rem;
+}
+
+label {
+    font-family: var(--font-Raleway);
+    font-size: 20px;
+    color: var(--white-text);
+    margin-bottom: 1rem;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+    text-indent: 1rem;
+}
+
+#cadastro {
+    width: 524px;
+    background-color: var(--blue-dnc);
+    color: var(--white-text);
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    border-radius: var(--borderRadius-global);
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#cadastro:hover {
+    border: 1px solid var(--white-text);
+}
+
+/*Elemento de check para cada campo*/
+.verificar {
+    display: flex;
+    font-family: var(--font-Raleway);
+    color: #e73550;
+    font-size: 12px;
+    height: 14px;
+    justify-content: right;
+    visibility: hidden;
+}
+
+/*Elemento de check geral de falha*/
+#verificarGeral {
+    display: flex;
+    font-family: var(--font-Raleway);
+    color: #e73550;
+    font-size: 12px;
+    text-align: left;
+    visibility: hidden;
+    margin-bottom: 1rem;
+
+}
+
+/*Elemento de check geral de sucesso*/
+.success {
+    display: flex;
+    font-family: var(--font-Raleway);
+    color: #0f7b0f;
+    font-size: 12px;
+    text-align: left;
+}
